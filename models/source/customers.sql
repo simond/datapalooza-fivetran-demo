@@ -34,7 +34,6 @@ select
     google_play_store,
     submit_date,
     you_tube,
-    description,
     _fivetran_deleted as deleted
 from
     source_postgres_public.customers
