@@ -1,0 +1,34 @@
+{{
+  config(
+    materialized='ephemeral'
+  )
+}}
+
+SELECT
+  funnel_0,
+  funnel_1,
+  funnel_2,
+  funnel_3,
+  funnel_4,
+  funnel_5,
+  funnel_6,
+  funnel_7,
+  funnel_8,
+  window_timestamp,
+  userid,
+  channelGrouping,
+  fullVisitorId,
+  customDimensions,
+  socialEngagementType,
+  trafficSource,
+  device,
+  hits,
+  date,
+  visitId,
+  visitStartTime,
+  visitNumber,
+  visitTime,
+  geoNetgeoNetwork,
+  visitTimestamp
+FROM
+  source_dataflow.sessions
